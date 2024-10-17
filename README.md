@@ -14,4 +14,4 @@ An image sharing site. The website includes images and buttons for sharing posts
 
 This page is deployed to github pages.
 
-Link:
+Link:https://softwarematty.github.io/se_project_spots/
