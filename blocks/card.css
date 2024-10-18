@@ -11,22 +11,23 @@
   object-fit: cover;
   display: block;
   border-radius: 8px;
-  overflow: hidden;
 }
 
 .card__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  column-gap: 37px;
 }
 
 .card__like-btn {
   background-image: url(../images/heart.svg);
-  width: 23px;
+  min-width: 23px;
   height: 20px;
   border: none;
   background-color: transparent;
   opacity: 40%;
+  cursor: pointer;
 }
 
 .card__title {
@@ -34,14 +35,25 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 @media screen and (max-width: 627px) {
   .card__image {
-    height: 413px;
+    height: 288px;
   }
 
   .card {
     max-height: 288px;
+  }
+
+  .card__title {
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 22px;
   }
 }
