@@ -27,6 +27,9 @@
   border: none;
   background-color: transparent;
   opacity: 40%;
+}
+
+.card__like-btn:hover {
   cursor: pointer;
 }
 
@@ -46,11 +49,9 @@
   .card__image {
     height: 288px;
   }
-
-  .card {
-    max-height: 288px;
+  .card__like-btn {
+    align-self: self-start;
   }
-
   .card__title {
     font-size: 16px;
     line-height: 1;
