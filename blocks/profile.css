@@ -58,7 +58,7 @@
 
 .profile__edit-btn:hover {
   cursor: pointer;
-  opacity: 0.6;
+  opacity: 1;
 }
 
 .profile__add-btn {
@@ -78,7 +78,7 @@
 
 .profile__add-btn:hover {
   cursor: pointer;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .profile__add-btn-image {
