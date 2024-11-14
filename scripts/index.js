@@ -2,26 +2,32 @@ const initialCards = [
   {
     name: "Val Thorens",
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/1-photo-by-moritz-feldmann-from-pexels.jpg",
+    imageAlt: "view of snowy mountain",
   },
   {
     name: "Restaurant terrace",
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/2-photo-by-ceiline-from-pexels.jpg",
+    imageAlt: "photo of restaurant",
   },
   {
     name: "An outdoor cafe",
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/3-photo-by-tubanur-dogan-from-pexels.jpg",
+    imageAlt: "someone sitting at cafe",
   },
   {
     name: "A very long bridge, over the forest and through the trees",
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/4-photo-by-maurice-laschet-from-pexels.jpg",
+    imageAlt: "photo of a bridge over the forest",
   },
   {
     name: "Tunnel with morning light",
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/5-photo-by-van-anh-nguyen-from-pexels.jpg",
+    imageAlt: "someone walking in a tunnel",
   },
   {
     name: "Mountain house",
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/6-photo-by-moritz-feldmann-from-pexels.jpg",
+    imageAlt: "photo of cabin surrounded by snow",
   },
 ];
 
@@ -55,6 +61,8 @@ function getCardElement(data) {
   cardNameEl.textContent = data.name;
 
   cardImageEl.src = data.link;
+
+  cardImageEl.alt = data.imageAlt;
 
   return cardElement;
 }
